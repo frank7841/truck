@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Col, Row} from 'react-bootstrap'
+import {Card, Col, Row, Dropdown} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import './home.css';
 
@@ -55,7 +55,22 @@ const Home = () => {
                             <Card.Text>
                             Create a contact by adding Customer, Driver, Carrier and Broker.
                             </Card.Text>
-                            <Link  to="/" variant="primary">Add Contact</Link>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                    Create Contact
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Customer</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Driver</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Vendor</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1">Broker</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Career</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Staff</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Contact</Dropdown.Item>
+
+                                </Dropdown.Menu>
+                                </Dropdown>
                         </Card.Body>
                        
                         </Card>
