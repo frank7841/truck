@@ -1,10 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './loader.css';
 import { useState } from "react";
 
 
-export default function loader() {
+export default function Loader() {
   const[name,setNumber] = useState("");
     return (
         <div>
