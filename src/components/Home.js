@@ -15,7 +15,7 @@ const Home = () => {
                             <Card.Text>
                             Create a load and calculate the load charges for a customer by adding the shipper, consignee, and freight details.
                             </Card.Text>
-                            <Link  to="/" variant="primary">Create Load</Link>
+                            <Link  to="/loader" variant="primary">Create Load</Link>
                         </Card.Body>
                         </Card>
                     </Col>
