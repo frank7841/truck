@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="home-cards">
             <Row>
-                <Col md={6}>
+                <Col md={6} className="column">
                     <Card >
                         <Card.Header>Acive Loads</Card.Header>
                         <Card.Body className="text-center">
@@ -19,7 +19,8 @@ const Home = () => {
                         </Card.Body>
                         </Card>
                     </Col>
-                    <Col sm={6}>
+                    
+                    <Col sm={6} className="space-btn-col">
                     <Card >
                         <Card.Header>Assigned Dispatch</Card.Header>
                         <Card.Body className="text-center">
@@ -27,7 +28,7 @@ const Home = () => {
                             <Card.Text>
                             Create a Quick Dispatch to assign, enter trip sheets, and add expenses for the dispatch.
                             </Card.Text>
-                            <Link  to="/" variant="primary">Quick Dispatch</Link>
+                            <Link  to="/dispatch" variant="primary">Quick Dispatch</Link>
                         </Card.Body>
                        
                         </Card>
@@ -35,7 +36,7 @@ const Home = () => {
 
                 </Row>
                 <Row className="space-btn">
-                <Col md={6}>
+                <Col md={6} >
                     <Card >
                         <Card.Header>Open Invoices</Card.Header>
                         <Card.Body className="text-center">
@@ -47,8 +48,9 @@ const Home = () => {
                         </Card.Body>
                         </Card>
                     </Col>
-                    <Col sm={6}>
-                    <Card >
+                    
+                    <Col sm={6} className="space-btn-col">
+                    <Card  >
                         <Card.Header>Address Book</Card.Header>
                         <Card.Body className="text-center">
                             <Card.Title>Create Your First Contact!</Card.Title>

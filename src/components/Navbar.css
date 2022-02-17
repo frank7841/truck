@@ -1,7 +1,7 @@
 .navbar {
 	height: 50px;
 	width: 100%;
-	background: rgb(214, 124, 50); 
+	background: rgb(44, 26, 85); 
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -14,6 +14,7 @@
 .nav-logo {
 	text-decoration: none;
 	color: white;
+	
 }
 
 .nav-links {
@@ -57,7 +58,7 @@
 	}
 
 	.nav-links.active {
-		background:  rgb(214, 124, 50); 
+		background:  rgb(44, 26, 85);  
 		z-index: 20;
 		left: 0;
 	}
