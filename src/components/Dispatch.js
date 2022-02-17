@@ -7,7 +7,7 @@ import "./dispatch.css"
 
     return(
        
-        <div>
+        <div className="dispatch-row1">
             <Container className="top">
                 <div className="float-left">
                     <h5>
@@ -20,15 +20,16 @@ import "./dispatch.css"
                     </h5>
                 </div>
             </Container>
-
-            <section className="dispatch-row1">
+            <Form>
+            <section >
+            
                 <Row>
                     <Col md={4} className="">
                     <p>Dispatch Number: <a href="/"><small>Switch to Manual Numbering</small></a></p>
                     
                     </Col>
                     <Col md={8}>
-                        <Form>
+                     
                         <Row>
                             <Col>
                             <Form.Label>PRO Number</Form.Label>
@@ -43,12 +44,91 @@ import "./dispatch.css"
                             <Form.Control placeholder="Zip" type="time" />
                             </Col>
                         </Row>
-                        </Form>
+                      
                     </Col>    
                 </Row>
+                    
                 <hr/>
             </section>
-            
+            <section>
+                <h5><strong>Customer/Broker</strong></h5>
+                <Row>
+                    <Col md={4} className="col-101" >
+                        <Form.Check
+                            inline
+                            label="customer"
+                            name="group1"
+                            type="radio"
+                        
+                        />
+                        <Form.Check
+                            inline
+                            label="Broker"
+                            name="group1"
+                            type="radio"
+                        
+                        />
+                        <br/>
+                        <Form.Group as={Row} className="mb-3 top-form" controlId="formHorizontalEmail">
+                            <Form.Label>
+                            Customer:
+                            </Form.Label>
+                            <Col>
+                            <Form.Control type="text" placeholder="" />
+                            <br/>
+                            <Button>Add</Button>
+                            </Col>
+                        </Form.Group>
+
+                        <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+                            <Form.Label >
+                            Account Number:
+                            </Form.Label>
+                            <Col>
+                            <Form.Control type="text"  />
+                            </Col>
+                        </Form.Group>
+
+                        <Form.Check
+                            inline
+                            label="CSA Eligible Dispatch"
+                            name="group1"
+                            type="checkbox"
+                        
+                        />
+                    </Col>
+                    <Col md={2}>
+
+                    </Col>
+                    <Col md={5}>
+                    <Form.Group as={Row} className="mb-3 top-form" controlId="formHorizontalEmail">
+                            <Form.Label>
+                            Refference:
+                            </Form.Label>
+                            <Col>
+                            <Form.Control as="textarea"
+                                style={{ height: '150px' }} />
+                            <br/>
+                            </Col>
+                        </Form.Group>
+                        <Form.Group as={Row} className="mb-3 top-form" controlId="formHorizontalEmail">
+                            <Form.Label>
+                            C-TPAT:
+                            </Form.Label>
+                            <Col>
+                            <Form.Control type="text" placeholder="" />
+                            <br/>
+                            <Button>Add</Button>
+                            </Col>
+                        </Form.Group>
+
+
+                    </Col>
+                </Row>        
+                <hr/>
+                
+            </section>
+            </Form>
         </div>
        
     )
