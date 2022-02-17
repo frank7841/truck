@@ -5,8 +5,10 @@
     -webkit-column-gap: 50%;
     column-count: 2;
     column-gap: 50%;
+    padding-top: 2rem;
 }
-.top div{
-   
-    margin:10px;
+
+.dispatch-row1{
+    margin: 1rem;
+  
 }
