@@ -19,7 +19,7 @@ const Navbar = () => {
 		<nav className="navbar">
 			
 			<Link to="/" className="nav-logo">
-				<img  src={logo}/>
+				<img  src={logo} alt="logo"/>
 			</Link>
 			<div onClick={handleClick} className="nav-icon">
 				{open ? <FiX /> : <FiMenu />}
