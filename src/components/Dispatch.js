@@ -11,12 +11,12 @@ import "./dispatch.css"
             <Container className="top">
                 <div className="float-left">
                     <h5>
-                        <strong><a href="">Dispatch</a></strong>
+                        <strong><a href="/dispatch">Dispatch</a></strong>
                     </h5>
                 </div>
                 <div  id="float-left">
                     <h5>
-                        <strong><a href="">Dispatch Preferences</a></strong>
+                        <strong><a href="/dispatch">Dispatch Preferences</a></strong>
                     </h5>
                 </div>
             </Container>
